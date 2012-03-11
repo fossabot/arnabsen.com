@@ -9,9 +9,16 @@
 	<script type="text/javascript" src="js/minified.js"></script>
 	<link rel="shortcut icon" href="favicon.ico"/>
 	<script type="text/javascript">
-		$.backstretch("images/bg/arnab_bg_" + (Math.random() * 2) + ".jpg");
-	</script>
-	<script type="text/javascript">
+	//$.backstretch("images/bg/arnab_bg_" + Math.ceil(Math.random() * 2) + ".jpg");
+
+		var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+		if (mobile) {  
+			$.backstretch("images/bg/arnab_bg_2.jpg");
+		}
+		else {
+			$.backstretch("images/bg/arnab_bg_1.jpg");
+		}
+		
 		$(document).ready(function() {
 			$("a.grouped_elements").fancybox();
 			//$("body").css("display", "none");
