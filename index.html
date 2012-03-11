@@ -5,22 +5,57 @@
 	<title>ARNAB SEN // the official website</title>
 	<meta name="keywords" content="arnab, sen, arnablog, canada, india, china, vancouver, beijing, bangalore, hyderabad, bombay, mumbai, online" />
 	<meta name="description" content="The gateway for Arnab Sen on the web" />
+	
 	<link type="text/css" href="css/styles.css" rel="stylesheet" media="screen" />
-	<script type="text/javascript" src="js/minified.js"></script>
+	<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+	
 	<link rel="shortcut icon" href="favicon.ico"/>
+	
 	<script type="text/javascript">
-		$.backstretch("images/bg/arnab_bg_" + Math.ceil(Math.random() * 7) + ".jpg");
-		//$.backstretch("images/bg/arnab_bg_7.jpg");
-		$(document).ready(function() {
-			$("a.grouped_elements").fancybox();
-			//$("body").css("display", "none");
-            //$("body").fadeIn(3000);
-		});
+	
+	jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					autoplay				:	0,
+					fit_portrait			:	0,
+					random					:	1,
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'images/bg/arnab_bg_1.jpg'},
+														{image : 'images/bg/arnab_bg_2.jpg'},  
+														{image : 'images/bg/arnab_bg_3.jpg'},
+														{image : 'images/bg/arnab_bg_4.jpg'},
+														{image : 'images/bg/arnab_bg_5.jpg'},
+														{image : 'images/bg/arnab_bg_6.jpg'}
+												]
+					
+				});
+		    });
+			
+	$(document).ready(function() {
+		$("a.grouped_elements").fancybox();
+	});
+		    
 	</script>
 </head>
 
 <body>
-
+	
 	<div id="header">
 		<div id="innerHeader">
 			<h1><a href="http://www.arnabsen.com/"><img src="images/arnab_logo.gif" alt="ARNAB SEN // the official website"/></a></h1>
@@ -38,7 +73,10 @@
 	<div class="clear"></div>
 
 	<div id="container">
-		<div id="section-home"></div>	
+		<div id="section-home">
+			<a id="prevslide" class="load-item"></a>
+			<a id="nextslide" class="load-item"></a>
+		</div>	
 		
 		<div id="section-about-top"></div>
 		<div id="section-about">
