@@ -13,38 +13,12 @@
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="js/scroll.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.1/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
-	<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
 
 	<link rel="shortcut icon" href="favicon.ico"/>
 
 	<script type="text/javascript">
 
 	jQuery(function($){
-
-				$.supersized({
-
-					// Functionality
-					autoplay				:	0,
-					fit_portrait			:	0,
-					random					:	1,
-					slide_interval          :   3000,		// Length between transitions
-					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-					transition_speed		:	700,		// Speed of transition
-
-					// Components
-					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-					slides 					:  	[			// Slideshow Images
-														{image : 'images/bg/arnab_bg_1.jpg'},
-														{image : 'images/bg/arnab_bg_2.jpg'},
-														{image : 'images/bg/arnab_bg_3.jpg'},
-														{image : 'images/bg/arnab_bg_4.jpg'},
-														{image : 'images/bg/arnab_bg_5.jpg'},
-														{image : 'images/bg/arnab_bg_6.jpg'}
-												]
-
-				});
-		    });
 
 	$(document).ready(function() {
 		$("a.grouped_elements").fancybox();
@@ -59,11 +33,8 @@
 		<div id="innerHeader">
 			<h1><a href="http://www.arnabsen.com/"><img src="images/arnab_logo.gif" alt="ARNAB SEN // the official website"/></a></h1>
 			<ul class="mainMenu cssonly">
-				<li><a href="#section-home">Home</a></li>
 				<li><a href="#section-about-top">About</a></li>
 				<li><a href="#section-portfolio-top">Portfolio</a></li>
-				<li><a href="#section-contact-top">Contact</a></li>
-				<li><a href="http://www.arnablog.com" target="_blank">ARNABlog</a></li>
 			</ul>
 		</div>
 	</div>
@@ -71,14 +42,8 @@
 	<div class="clear"></div>
 
 	<div id="container">
-		<div id="section-home">
-			<a id="prevslide" class="load-item"></a>
-			<a id="nextslide" class="load-item"></a>
-		</div>
-
-		<div id="section-about-top"></div>
+		<div id="section-about-top">
 		<div id="section-about">
-			<a href="#section-home"><img src="images/close_icon.png" alt="close" class="x" /></a>
 			<h2 class="title-about">About</h2>
 			<h3>Arnab is focused on building an international career that melds his technical skills, creative talents, business knowledge, and leadership abilities.</h3>
 			<div class="clear"></div>
@@ -99,6 +64,11 @@
 			<div class="hr"></div>
 			<h3>Resume/CV</h3>
 			<div><iframe src="http://docs.google.com/gview?url=http://arnabsen.com/files/ArnabSenResume.pdf&embedded=true" style="width:800px; height:1040px;" frameborder="0"></iframe></div>
+			<div class="clear"></div>
+			<div class="hr"></div>
+			<div class="social">
+				<a href="http://www.linkedin.com/in/arnabsen" class="socialicons linkedin" target="_blank"></a>
+			</div>
 			<div class="clear"></div>
 		</div>
 
@@ -195,26 +165,6 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-
-		<div id="section-contact-top"></div>
-		<div id="section-contact">
-			<a href="#section-home"><img src="images/close_icon.png" alt="close" class="x"/></a>
-			<h2 class="title-contact">Contact</h2>
-			<script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
-			<script type="text/javascript">
-				var z7x3p9 = new WufooForm();
-				z7x3p9.initialize({'userName':'arnab', 'formHash':'z7x3p9', 'autoResize':true, 'height':'436'});
-				z7x3p9.display();
-			</script>
-
-			<div class="hr"></div>
-			<div class="social">
-				<a href="http://www.linkedin.com/in/arnabsen" class="socialicons linkedin" target="_blank"></a>
-				<a href="http://twitter.com/arnab" class="socialicons twitter" target="_blank"></a>
-				<a href="http://www.facebook.com/arnabonline" class="socialicons facebook" target="_blank"></a>
-			</div>
-		</div>
-
 	</div>
 
 	<script type="text/javascript">
