@@ -1,0 +1,25 @@
+{
+  "name": "arnabsen.com",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://arnabsen.github.io",
+  "dependencies": {
+    "antd": "^3.2.2",
+    "gh-pages": "^1.1.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-motion": "^0.5.2",
+    "react-pdf": "^2.5.3",
+    "react-scripts": "1.1.1",
+    "react-simple-maps": "^0.11.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
