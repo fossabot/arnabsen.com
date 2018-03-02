@@ -2,7 +2,7 @@
   "name": "arnabsen.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.io/arnabsen/arnabsen.github.com",
+  "homepage": "https://github.io/arnabsen/arnabsen.com",
   "dependencies": {
     "antd": "^3.2.2",
     "prop-types": "^15.6.1",
