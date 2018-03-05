@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 import { Layout, BackTop } from 'antd';
 import { SocialIcon } from 'react-social-icons';
 
-const { Header, Footer } = Layout;
+const { Header, Content, Footer } = Layout;
 
 const headerStyle = {
     width: '100%',
@@ -31,8 +31,9 @@ class App extends React.Component {
                         Arnab Sen
                     </div>
                 </Header>
-
-                <AsyncContent/>
+                <Content id="content" style={{ padding: '0 50px', marginTop: 64 }}>
+                     <AsyncContent/>
+                </Content>
 
                 <BackTop />
 

@@ -5,7 +5,9 @@
   "homepage": "https://www.arnabsen.com",
   "dependencies": {
     "antd": "^3.2.2",
+    "babel-plugin-add-react-displayname": "0.0.5",
     "logrocket": "^0.6.9",
+    "logrocket-react": "^1.0.0",
     "preact": "^8.2.7",
     "preact-compat": "^3.18.0",
     "prop-types": "^15.6.1",
@@ -23,9 +25,11 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "surge ./build"
+    "deploy": "surge ./build",
+    "lighthouse": "cd lighthouse && lighthouse https://arnabsen.com --view --disable-cpu-throttling --disable-network-throttling --disable-device-emulation"
   },
   "devDependencies": {
+    "lighthouse": "^2.9.1",
     "surge": "^0.20.1"
   }
 }

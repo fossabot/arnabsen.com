@@ -1,9 +1,8 @@
 import React from 'react';
-import { Layout, Card, Divider, Timeline } from 'antd';
+import { Card, Divider, Timeline } from 'antd';
 //import Resume from './ArnabSenResume.pdf';
 import 'antd/dist/antd.css';
 
-const { Content } = Layout;
 //const { Meta } = Card;
 //const { Link } = Anchor;
 
@@ -12,19 +11,13 @@ const gridStyle = {
     textAlign: 'center',
 };
 
-/* const socialIconUrls = [
-    'http://twitter.com/arnab',
-    'http://linkedin.com/in/arnabsen'
-]; */
-
 export default () => (
 
-<Content id="content" style={{ padding: '0 50px', marginTop: 64 }}>
                     <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
                         <Divider>About</Divider>
                         <p>Arnab is focused on building an international career leading successful projects that harness his technical skills, creative talents, business knowledge, and leadership abilities.</p>
+                        
                         <Divider>Work Experience</Divider>
-
                         <Timeline>
                             <Timeline.Item>AKQA Paris</Timeline.Item>
                             <Timeline.Item>AKQA San Francisco</Timeline.Item>
@@ -49,12 +42,5 @@ export default () => (
                             <Card.Grid style={gridStyle}>Sephora</Card.Grid>
                         </Card>
                     </div>
-
-                    {/*<Divider>Resume / CV</Divider>
-
-                     <PDF file={Resume} fillwidth>
-                    </PDF> */}
-      
-                </Content>
 
 );
