@@ -38,8 +38,6 @@ class App extends React.Component {
 
                 <Footer style={{ textAlign: 'center' }}>
                 <SocialIcon url="http://linkedin.com/in/arnabsen" color="black"/>
-{/*                 <SocialIcon url="http://linkedin.com/in/jaketrent" />
-                <SocialIcons urls={socialIconUrls} color="black" style={{textAlign: 'center'}}/> */}
                     <p>©2018 Arnab Sen</p>
                 </Footer>
             </Layout>
