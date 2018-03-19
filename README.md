@@ -1,6 +1,5 @@
 # ARNAB SEN // the official website
 
-=======
 The codebase for the official [Arnab Sen](https://www.arnabsen.com) website.
 
 ## Authors
